@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>-----------if else-------------</h1>
+    {% if name %}
+    <h2>{{name}}</h2>
+    {% else %}
+    <h2>Data is not exist</h2>
+    {% endif %}
+<br>
+    <h1>-----------if else  data not exist-------------</h1>
+    {% if hello %}
+    <h2>{{name}}</h2>
+    {% else %}
+    <h2>Data is not exist</h2>
+    {% endif %}
+
+    <h1>-----------nested if ----------</h1>
+    {% if name %}
+      <h2>{{name}}</h2>
+    {% elif city == "Bpl" %}
+      <h2> {{city}} </h2>
+    {% else %}
+       <h2>Not exist</h2>  
+    {% endif %}
+</body>
+</html>
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>If-endif Tag</h1>
+        {% if name %}
+        <h3>Hello {{name}}</h3>
+        {% endif %}
+    </center>
+    <center>
+        <h1>If-Tag (with else condition)</h1>
+        {% if name == "Django" %}
+        <h3>Hello {{name}}</h3>
+        {% else %}
+        <h3>Condition not satisfied</h3>
+        {% endif %}
+    </center>
+    <center>
+        <h1>If-Tag (with == operators)</h1>
+        {% if name == "Neeraj" %}
+        <h3>Hello {{name}}</h3>
+        {% endif %}
+    </center>
+
+    <center>
+        <h1>If-elif-else-endif Tag</h1>
+        {% if name %}
+        <h3>Hello {{name}}</h3>
+        {% elif st %}
+        <h3>hello {{st}}</h3>
+        {% else %}
+        <h3>Hello nothing to do</h3>
+        {% endif %}
+    </center>
+
+    <center>
+        <h1>If-Tag (for loop with counter)</h1>
+        {% if name == "Neeraj" %}
+        {{languages}}
+            {% for i in languages %}
+                <h4>{{forloop.counter}}.{{i}}</h4>
+            {% endfor %}
+        {% endif %}
+    </center>
+    <center>
+        <h1>If-Tag (for loop with counter0)</h1>
+        {% if name == "Neeraj" %}
+        {{languages}}
+            {% for i in languages %}
+                <h4>{{forloop.counter0}}.{{i}}</h4>
+            {% endfor %}
+        {% endif %}
+    </center>
+    <center>
+        <h1>If-Tag (for loop with revcounter)</h1>
+        {% if name == "Neeraj" %}
+        {{languages}}
+            {% for i in languages %}
+                <h4>{{forloop.revcounter}}.{{i}}</h4>
+            {% endfor %}
+        {% endif %}
+    </center>
+    <center>
+        <h1>If-Tag (for loop with revcounter0)</h1>
+        {% if name == "Neeraj" %}
+        {{languages}}
+            {% for i in languages %}
+                <h4>{{forloop.revcounter0}}.{{i}}</h4>
+            {% endfor %}
+        {% endif %}
+    </center>
+    <center>
+        <h1>If-Tag (for loop with first)</h1>
+        {% if name == "Neeraj" %}
+        {{languages}}
+            {% for i in languages %}
+                <h4>{{forloop.first}}.{{i}}</h4>
+            {% endfor %}
+        {% endif %}
+    </center>
+    <center>
+        <h1>If-Tag (for loop with last)</h1>
+        {% if name == "Neeraj" %}
+        {{languages}}
+            {% for i in languages %}
+                <h4>{{forloop.last}}.{{i}}</h4>
+            {% endfor %}
+        {% endif %}
+    </center>  
+</body>
+</html>
